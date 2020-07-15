@@ -44,9 +44,17 @@ function Person(name, age) {
   this.age = age;
   this.stomach = [];
 }
-Person.prototype.eat("someFood") = function (){
-  this.stomach.push
+Person.prototype.eat = function (food){
+  if(this.stomach.length < 10){
+  this.stomach.push(food)
+  }
 }
+Person.prototype.poop = function (){
+  this.stomach = [];
+}
+Person.prototype.toString = function(){
+  return `${this.name}, ${this.age}`
+};
 
 /*
   TASK 2
@@ -62,7 +70,7 @@ Person.prototype.eat("someFood") = function (){
         + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
 */
 
-function Car() {
+function Car(model, milesPerGallon) {
 
 }
 

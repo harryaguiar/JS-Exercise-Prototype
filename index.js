@@ -115,10 +115,10 @@ Baby.prototype.play = ( ) => `Playing with ${this.favoriteToy}`
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. In the global context refers to the global object
+  2. Whenever a function is called by a preceding dot, the object before that dot is this.
+  3. Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+  4. We can explicitly tell the JavaScript engine to set this to point to a certain value using call, apply or bind.
 */
 
 
